@@ -7,6 +7,11 @@ $DB_NAME = 'charity_system';
 $DB_USER = 'root';
 $DB_PASS = '';
 
+//$DB_HOST = 'localhost';
+//$DB_NAME = 'np03cy4s250022';
+//$DB_USER = 'np03cy4s250022';
+//$DB_PASS = 'TYWCuxG0hE';
+
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,

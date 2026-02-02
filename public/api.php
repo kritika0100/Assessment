@@ -177,7 +177,7 @@ switch ($action) {
       if (!in_array($ext, $allowed, true)) {
         json_out(['ok'=>false,'message'=>'Banner must be an image (jpg, png, webp, gif).'], 400);
       }
-      $uploadDir = __DIR__ . '/../assests/uploads';
+      $uploadDir = __DIR__ . '/../assets/uploads';
       if (!is_dir($uploadDir)) @mkdir($uploadDir, 0777, true);
 
       $safe = preg_replace('/[^a-zA-Z0-9_-]/', '', pathinfo($orig, PATHINFO_FILENAME)) ?: 'banner';
@@ -188,7 +188,7 @@ switch ($action) {
         json_out(['ok'=>false,'message'=>'Failed to upload banner.'], 500);
       }
       // Store path usable from /public pages
-      $banner = '../assests/uploads/' . $fname;
+      $banner = '../assets/uploads/' . $fname;
     }
     $description = trim((string)($input['description'] ?? ''));
 
