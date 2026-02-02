@@ -1,5 +1,5 @@
 <?php
-$title = 'BlueHope | Home';
+$title = 'Donora | Home';
 require_once __DIR__ . '/../includes/header.php';
 
 // Featured + latest events
